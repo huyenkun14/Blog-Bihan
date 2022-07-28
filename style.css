@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body:before {
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*background-color: #FB9D7B;*/
+    background-color: #FAEBD7;
+    z-index: -100;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-thumbnail {
+    padding: 15px;
+}
+
+
+/* Nav */
+/*nav {
+    position: fixed;
+    top: 0;
+}*/
+.navbar-brand {
+    margin-right: 30px;
+}
+
+.nav-link {
+    margin-right: 15px;
+    letter-spacing: 1.5px;
+}
+
+/* End Nav */
+
+
+/* Form Account */
+.account-form {
+    position: fixed;
+    top: 0;
+    right: -105%;
+    width: 40%;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    gap: 2rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 1200;
+    padding: 2rem;
+    text-align: center;
+}
+
+.account-form.active {
+    right: 0;
+    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+}
+
+.account-form #close-form {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #444;
+}
+
+.account-form #close-form:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.account-form form {
+    border: 0.1rem solid #FFA07A;
+    padding: 2rem;
+    display: none;
+}
+
+.account-form form.active {
+    display: block;
+}
+
+.account-form form h3 {
+    text-transform: capitalize;
+    color: #444;
+    padding-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+.account-form form .box {
+    width: 100%;
+    padding: 10px;
+    border: 0.1rem solid #FFA07A;
+    margin: .7rem 0;
+}
+
+.account-form form .flex {
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.account-form form .flex label {
+    color: #777;
+    cursor: pointer;
+}
+
+.account-form form .flex a {
+    margin-left: auto;
+}
+
+.account-form form .flex a:hover {
+    text-decoration: underline;
+    color: #FFA07A;
+}
+
+.account-form form .btn {
+    margin-top: 15px;
+    padding: 5px 10px;
+    background: #FFA07A;
+    color: #fff;
+}
+
+.account-form .buttons .btn {
+    margin: 0 5px;
+}
+
+.account-form .buttons .btn.active {
+    background: #FFA07A;
+    color: #fff;
+}
+/* End Form Account */
+
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    .account-form {
+        width: 85%;
+    }
+
+    .header-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .content-item-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .img-thumbnail {
+        padding: 0;
+        border: none;
+    }
+
+    .content-image {
+        margin: 0 80px;
+    }
+
+    .content-para {
+        text-align: center;
+        padding: 10px 20px;
+        margin: -10px 30px 0 50px;
+        background-color: #fff;
+        box-shadow: 0 -6px 8px 0 rgba(0, 0, 0, 0.4), 0 -6px 20px 0 rgba(0, 0, 0, 0.39);
+    }
+
+    .para-align {
+        background-color: #FAEBD7;
+    }
+
+    .md-unavailable {
+        display: none;
+    }
+}

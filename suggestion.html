@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biHan</title>
+
+    <!-- Bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Font Awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Reset cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Mognific Popup cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./css/suggestion.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.jpg">
+
+</head>
+
+<body>
+
+
+
+    <!-- Nav -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h3>BiHaN</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">
+                            <h6>Trang Chủ</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">
+                            <h6>Bài Viết Mới</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="suggestion.html">
+                            <h6>Góp Ý</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link account" href="#">
+                            <h6>Tài Khoản</h6>
+                        </a>
+
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Tìm Kiếm" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Tìm</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- End Nav -->
+
+
+    <!-- Form Account -->
+    <div class="account-form">
+
+        <div id="close-form" class="fas fa-times"></div>
+
+        <div class="buttons">
+            <span class="btn active login-btn">Đăng Nhập</span>
+            <span class="btn register-btn">Đăng Ký</span>
+        </div>
+
+        <form class="login-form active" action="">
+            <h3>Đăng Nhập</h3>
+            <input type="email" placeholder="Email" class="box">
+            <input type="password" placeholder="Mật Khẩu" class="box">
+            <div class="flex">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+                <a href="#">Quên Mật Khẩu?</a>
+            </div>
+            <input type="submit" value="Đăng Nhập" class="btn">
+        </form>
+
+        <form class="register-form" action="">
+            <h3>Đăng Ký</h3>
+            <input type="email" placeholder="Email" class="box">
+            <input type="password" placeholder="Mật Khẩu" class="box">
+            <input type="password" placeholder="Nhập lại Mật Khẩu" class="box">
+            <input type="submit" value="Đăng Ký" class="btn">
+        </form>
+
+    </div>
+    <!-- End Form Account -->
+
+
+    <!-- Form -->
+    <section class="suggestion">
+        <div class="row">
+            <div class="col-2 col-sm-2 col-md-3 col-lg-3"></div>
+            <div class="col-8 col-sm-8 col-md-6 col-lg-6">
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label"><h1>Bạn Muốn Nói Gì?</h1></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" ></textarea>
+                    <button type="submit" class="btn btn-primary mb-3 btn-send">Gửi</button>
+                </div>
+            </div>
+            <div class="col-2 col-sm-2 col-md-3 col-lg-3"></div>
+        </div>
+    </section>
+    <!-- End Form -->
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted">
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Bihan
+                        </h6>
+                        <p>Người bận rộn chẳng còn thời gian để khóc.<br>Người ta chỉ cô đơn khi có thời gian dành cho
+                            nó.</p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 md-unavailable">
+                        <h6 class="text-uppercase fw-bold mb-4">Hỗ Trợ</h6>
+                        <p><a href="suggestion.html" class="text-reset">Góp Ý</a></p>
+                        <p><a href="suggestion.html" class="text-reset">Báo Cáo</a></p>
+                        <p><a href="suggestion.html" class="text-reset">Feedback</a></p>
+                        <p><a href="suggestion.html" class="text-reset">Thắc Mắc</a></p>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 md-unavailable">
+                        <h6 class="text-uppercase fw-bold mb-4">Liên kết nhanh</h6>
+                        <p><a href="index.html" class="text-reset">Trang Chủ</a></p>
+                        <p><a href="news.html" class="text-reset">Bài Viết Mới</a></p>
+                        <p><a href="souvenir.html" class="text-reset">Khoảnh Khắc</a></p>
+                    </div>
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
+                        <p><i class="fas fa-home me-3"></i> Thắng lợi, Thường Tín, Hà Nội</p>
+                        <p><i class="fas fa-envelope me-3"></i>hanhsino1508@gmail.com</p>
+                        <p><i class="fas fa-phone me-3"></i> +84 34 6351133</p>
+                        <p><i class="fa-brands fa-facebook me-3"></i><a style="text-decoration: none;"
+                                href="http://www.facebook.com/khanhhuyenhehe"> Facebook</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="http://www.facebook.com/khanhhuyenhehe">kaHat</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <!-- Bootstrap cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <!-- JQuery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Mognific Popup cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
