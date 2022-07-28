@@ -1,0 +1,30 @@
+/* Section-content */
+.section-content {
+    margin: 100px 0;
+}
+
+.content-item {
+    margin-bottom: 80px;
+}
+
+.content-image {
+    margin: 0 10px;
+    z-index: -1;
+}
+
+.content-para h6 {
+    margin: 10px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.quote {
+    text-align: right;
+    font-style: italic;
+}
+
+.para-align {
+    text-align: right;
+}
+
+/* End Section-content */
